@@ -1,94 +1,191 @@
 function oneThroughTwenty() {
-    
-   /* Your code goes below
-   Write a for or a while loop
-   return the result*/
+   
+  let numeros = [];
+
+  for (let counter = 1; counter <= 20; counter ++)
+  {
+    numeros.push(counter)
+  }
+
+  return numeros;
     
 }
 
-//call function oneThroughTwenty
+console.log("oneThroughTwenty = "+oneThroughTwenty())
+
+
+
 
 function evensToTwenty() {
     
-   /* Your code goes below
-   Write a for or a while loop
-   return the result */
+  let numerosPares = [];
+
+  for(let counter = 1; counter <= 20; counter ++)
+  {
+    if (counter % 2 ===0)
+    {
+      numerosPares.push(counter)
+    }
+  }
+  
+  return numerosPares
   
 }
 
-//call function evensToTwenty
+console.log("evensToTwenty = "+evensToTwenty())
+
+
+
 
 function oddsToTwenty() {
+
+  let numerosImpares = [];
+
+  for(let counter = 1; counter <=20; counter ++)
+  {
+    if(counter % 2 !== 0)
+    {
+      numerosImpares.push(counter)
+    }
+  }
     
-  /* Your code goes below
-  Write a for or a while loop
-  return the result */
+  return numerosImpares
    
 }
 
-//call function oddsToTwenty
+console.log("oddsToTwenty = "+oddsToTwenty())
+
+
+
 
 function multiplesOfFive() {
     
-  /* Your code goes below
-  Write a for or a while loop
-  return the result */
+  let multiplosFive = [];
+
+  for( counter = 1; counter <= 100; counter ++)
+  {
+    if(counter % 5 === 0)
+    {
+      multiplosFive.push(counter)
+    }
+  }
+  
+  return multiplosFive
 
 }
 
-//call function multiplesOfFive
+console.log("multiplesOfFive = "+multiplesOfFive())
 
-function squareNumbers() {
-    
- /* Your code goes below
-  Write a for or a while loop
-  return the result */
-    
+
+
+
+function squareNumbers() { 
+
+  let quadradosPerfeitos = [] 
+  let resultado = 0;
+  for(counter = 1; resultado < 100; counter++)
+  {
+    resultado = counter * counter;
+    quadradosPerfeitos.push(resultado)
+  }
+  return quadradosPerfeitos
 }
 
-//call function squareNumbers
+console.log("squareNumbers = "+squareNumbers(100))
+
+
+
 
 function countingBackwards() {
     
-  /* Your code goes below
-  Write a for or a while loop
-  return the result */
+  let numerosInverso = []
+
+  for(counter =20; counter >=1; counter --)
+  {
+    numerosInverso.push(counter)
+  }
+
+  return numerosInverso
+
 }
 
-//call function countingBackwards
+console.log("countingBackwards = "+countingBackwards())
+
+
+
 
 function evenNumbersBackwards() {
     
- /* Your code goes below
-  Write a for or a while loop
-  return the result */
+  let numerosInversoPares = [];
+
+  for(let counter = 20; counter >= 1; counter --)
+  {
+    if (counter % 2 ===0)
+    {
+      numerosInversoPares.push(counter)
+    }
+  }
+  
+  return numerosInversoPares
+  
 }
 
-//call function evenNumbersBackwards
+console.log("evenNumbersBackwards = "+evenNumbersBackwards())
+
+
+
 
 function oddNumbersBackwards() {
     
- /* Your code goes below
-  Write a for or a while loop
-  return the result */
+  let numerosInversoImpares = [];
+
+  for(let counter = 20; counter >=1; counter --)
+  {
+    if(counter % 2 !== 0)
+    {
+      numerosInversoImpares.push(counter)
+    }
+  }
+    
+  return numerosInversoImpares
 }
 
-//call function oddNumbersBackwards
+console.log("oddNumbersBackwards = "+oddNumbersBackwards())
+
+
+
 
 function multiplesOfFiveBackwards() {
     
- /* Your code goes below
-  Write a for or a while loop
-  return the result */
+  let multiplosFiveInverso = [];
+
+  for( counter = 100; counter >= 1; counter --)
+  {
+    if(counter % 5 === 0)
+    {
+      multiplosFiveInverso.push(counter)
+    }
+  }
+  
+  return multiplosFiveInverso
 }
 
-//call function multiplesOfFiveBackwards
+console.log("multiplesOfFiveBackwards = "+multiplesOfFiveBackwards())
+
+
+
 
 function squareNumbersBackwards() {
-    
-   /* Your code goes below
-  Write a for or a while loop
-  return the result */
-}
 
-//call function squareNumbersBackwards
+  let quadradosPerfeitosInverso = [] 
+  let resultado = 0;
+  for(counter = 10; counter >= 1; counter--)
+  {
+    resultado = counter * counter;
+    quadradosPerfeitosInverso.push(resultado)
+  }
+  return quadradosPerfeitosInverso
+}
+  
+console.log("squareNumbersBackwards = "+squareNumbersBackwards())
+
